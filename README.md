@@ -1,7 +1,7 @@
 # fetch-rfc
 
 A small tool for fetching [RFCs](https://en.wikipedia.org/wiki/Request_for_Comments) written using [libcurl](https://curl.se/libcurl/). 
-The source of the RFCs is [](https://www.ietf.org/rfc/).
+The source of the RFCs is <https://www.ietf.org/rfc/>.
 
 ## Installation
 Before attempting to build or install fetch-rfc, make sure you have all the dependencies available on your system. These include:
