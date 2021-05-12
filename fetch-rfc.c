@@ -31,13 +31,20 @@ getrfc (char *rfc)
 	curl_global_init(CURL_GLOBAL_DEFAULT);
 	CURL *curl = curl_easy_init();
 	
-	if(curl) {
+	if (curl) {
 
   		CURLcode res;
   		curl_easy_setopt(curl, CURLOPT_URL, url);
 
+		/* Fail on HTTP 4xx errors instead of fetching the 404 page */
+		curl_easy_setopt(curl, CURLOPT_FAILONERROR, 1L);
+
 		/* Perform a libcurl easy session for the given url */
 		res = curl_easy_perform(curl);
+
+
+		/* Free the url buffer */
+		free(url);
 
 		/* Check for errors and return 0 in case there was an error */
 		if (res != CURLE_OK) {
