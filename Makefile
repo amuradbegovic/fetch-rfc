@@ -2,7 +2,7 @@
 CC = cc
 
 # libraries
-LIBS = $(curl-config --libs) 
+LIBS = `curl-config --libs` 
 
 # compiler and linker flags 
 CFLAGS = -std=c99 -pedantic -Wall -O2
