@@ -50,3 +50,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# I thought that GitHub's C .gitignore template will be useful here, but it turned out it is not. However, I am keeping it as it doesn't cause any harm. Below you can see a list of files i intended to be listed in .gitignore
+fetch-rfc
