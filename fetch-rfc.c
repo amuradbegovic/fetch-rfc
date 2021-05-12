@@ -42,7 +42,6 @@ getrfc (char *rfc)
 		/* Perform a libcurl easy session for the given url */
 		res = curl_easy_perform(curl);
 
-
 		/* Free the url buffer */
 		free(url);
 
