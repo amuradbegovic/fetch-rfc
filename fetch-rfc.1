@@ -1,0 +1,19 @@
+.TH FETCH-RFC 1 fetch-rfc
+.SH NAME
+fetch-rfc \- A small tool for fetching RFCs
+.SH SYNOPSIS
+.B fetch-rfc 
+.RB [ \-Number  ]
+.SH DESCRIPTION
+.B fetch-rfc
+is a small tool for fetching RFCs written using libcurl. The source of the RFCs is https://www.ietf.org/rfc/.
+.P
+Works the best when piped through 
+.IR less (1) 
+.P
+.SH EXAMPLE
+fetch-rfc 1149 | less
+.P
+You can now enjoy reading a document about IP over avian carriers from the comfort of your terminal. What a time to be alive! 
+.SH AUTHOR
+Adnan Muradbegović <adnan.muradbegovic@2gimnazija.edu.ba>
